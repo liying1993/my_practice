@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%  block head %}
+    <meta charset="UTF-8">
+        {% block title %}
+    <title>Title</title>
+        {% endblock title %}
+    {% endblock head %}
+</head>
+<body>
+{% block content %}{% endblock content %}
+
+
+{{ title }}<br/>
+{% set nav=[
+    {"name":"Home", "href":url_for(".index")},
+    {"name":"project", "href":url_for(".project")},
+    {"name":"service", "href":url_for(".service")},
+    {"name":"about", "href":url_for(".about")}
+]
+%}
+{% for item in nav%}
+    {% if loop.index !=1 %}
+        |
+    {% endif %}
+    <a href="about">{{ item.name }}</a>
+{% endfor %}
+
+<!--{% if 判断语句 %}-->
+    <!--。。。-->
+<!--{% else %}-->
+    <!--...-->
+<!--{% endif %}-->
+</body>
+
+{% block footer %}
+    <p>Copyright 2017 powered by liying</p>
+{% endblock footer %}
+</html>

@@ -18,17 +18,18 @@ class LyTest:
     def __call__(self):
         if not self._ins is None:
             return self._ins
-        print self._hint
+        print (self._hint)
         try:
             self._ins = self._func
-        except Exception, e:
-            print self._excp_hint
-            sys.exit(-1)
-        print self._end_hint
+        except Exception:
+            pass
+            # print (self._excp_hint0
+            # sys.exit(-1)
+        # print(self._end_hint)
         return self._ins
 
     def my_test(self):
-        print "this is a test"
+        print ("this is a test")
 
 
 def lalal():
