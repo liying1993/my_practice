@@ -5,7 +5,7 @@ socket作为服务器
 """
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-server_address = ('localhost', 10000)
+server_address = ('', 8888)
 print('starting up on {} port {}'.format(*server_address))
 sock.bind(server_address)
 

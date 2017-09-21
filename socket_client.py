@@ -8,7 +8,7 @@ socket 作为客户端
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 #连接某个端口的socket，并且正准备接受数据
-server_address = ('localhost', 10000)
+server_address = ('', 8899)
 print('connecting to {} port {}'.format(*server_address))
 sock.connect(server_address)
 
