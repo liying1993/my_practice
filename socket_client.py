@@ -17,12 +17,12 @@ try:
     print('sending {!r}'.format(message))
     sock.sendall(message)
 
-    amount_received = 0
-    amount_expected = len(message)
-    while amount_received < amount_expected:
-        data = sock.recv(16)
-        amount_received += len(data)
-        print('received {!r}'.format(data))
+    # amount_received = 0
+    # amount_expected = len(message)
+    # while amount_received < amount_expected:
+    data = sock.recv(655350)
+    # amount_received += len(data)
+    print('received {!r}'.format(data))
 finally:
     print('closing socket')
     sock.close()

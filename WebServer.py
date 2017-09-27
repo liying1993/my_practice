@@ -8,13 +8,23 @@ def recv_data(con):
         print("=================")
         print(data)
         filename = data.split()[1]
-        f = open(filename[1:])
+        # f = open(filename[1:])
+        f = open("/Users/liying/Documents/task/my_practice/helloworld.html")
         outputdata = f.read()
+        print("output data=============")
+        print(type(outputdata))
+        print(outputdata)
         header = 'HTTP/1.1 200 OK\nConnection: close\nContent-Type: text/html\nContent-Length: %d\n\n'%(len(outputdata))
-        con.send(header.encode())
-        for i in range(0, len(outputdata)):
-            con.send(outputdata[i].encode())
-        con.close()
+        print("header ===================")
+        print(type(header))
+        print(header)
+        con.send(header.encode(encoding='utf-8'))
+        print("======after str to byte_likes========")
+        print(header.encode(encoding='utf-8'))
+        con.send(outputdata.encode(encoding='utf-8'))
+        # for i in range(0, len(outputdata)):
+        #     con.send(outputdata[i])
+        # con.close()
         # if len(data)>0:
         #     print("get it")
     except IOError:
