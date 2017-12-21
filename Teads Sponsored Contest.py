@@ -27,11 +27,10 @@ def max_depth(parent, node):
 
 def get_final_depth():
     for key, value in network.items():
-        # depth_list = []
-        result = (1 + max_depth(key, i) for i in network[key])
+        depth_list = []
         for i in network[key]:
-            m_d = 1 + max_depth(key, i)
-            yield m_d
+            depth_list.append(1 + max_depth(key, i))
+        yield depth_list
             # depth_list.append(m_d)
             #     final_depth.append(max(depth_list))
             # print(min(final_depth))
@@ -42,16 +41,21 @@ if __name__ == '__main__':
     final_depth = []
     result = make_dict(my_dict)
     print(result)
-    aa = [1 + max_depth(key, value) for key, value in network.items() for value in network[key]]
-    for key, value in network.items():
-        depth_list = []
-        for i in network[key]:
-            m_d = 1 + max_depth(key, i)
-            depth_list.append(m_d)
-        print(depth_list)
-        final_depth.append(max(depth_list))
-    print(final_depth)
-    print(min(final_depth))
+    aa = (max(i) for i in get_final_depth())
+    print(min(aa))
+    # for i in get_final_depth():
+    #     print(i)
+    # aa = [1 + max_depth(key, value) for key, value in network.items() for value in network[key]]
+    # for key, value in network.items():
+    #     depth_list = []
+    #     for i in network[key]:
+    #         m_d = 1 + max_depth(key, i)
+    #
+    #         depth_list.append(m_d)
+    #     print(depth_list)
+    #     final_depth.append(max(depth_list))
+    # print(final_depth)
+    # print(min(final_depth))
 
 
 

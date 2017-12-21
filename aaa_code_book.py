@@ -52,3 +52,15 @@ import os
 
 # ("la","cd")[True]  ["la","cd"][True]
 
+# sys.exc_info() 可以显示 Exception 的信息，返回一个 (type, value, traceback) 组成的三元组，可以与 try/catch 块一起使用：
+
+# sys.exit(arg=0) 用于退出 Python。0 或者 None 表示正常退出，其他值表示异常
+
+# new = {}
+# for (key, value) in data:
+#     group = new.setdefault(key, []) # key might exist already
+#     group.append( value )
+
+# new = defaultdict(list)
+# for (key, value) in data:
+#     new[key].append( value ) # all keys have a default already
