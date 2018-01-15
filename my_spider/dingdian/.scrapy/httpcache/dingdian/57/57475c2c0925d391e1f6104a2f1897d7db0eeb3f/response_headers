@@ -1,0 +1,16 @@
+Server: Tengine
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Date: Fri, 22 Dec 2017 03:02:51 GMT
+X-Powered-By: PHP/5.5.9-1ubuntu4.22
+Cache-Control: 
+Cache-Control: max-age=600
+Via: cache38.l2nu17-1[623,404-1280,M], cache37.l2nu17-1[624,0], kunlun7.cn249[630,404-1280,M], kunlun5.cn249[631,0]
+X-Swift-Error: orig response 4XX error
+X-Swift-Error: orig response 4XX error
+X-Cache: MISS TCP_MISS dirn:-2:-2 mlen:-1
+X-Swift-Savetime: Fri, 22 Dec 2017 03:02:51 GMT
+X-Swift-Cachetime: 600
+Timing-Allow-Origin: *
+Eagleid: 2a51040515139117707517214e
+Content-Encoding: gzip

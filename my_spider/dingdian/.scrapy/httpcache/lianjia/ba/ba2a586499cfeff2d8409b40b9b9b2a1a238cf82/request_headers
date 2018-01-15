@@ -1,0 +1,6 @@
+Referer: https://bj.lianjia.com/ershoufang/
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: Scrapy/1.4.0 (+http://scrapy.org)
+Accept-Encoding: gzip,deflate
+Cookie: all-lj=eae2e4b99b3cdec6662e8d55df89179a; select_city=110000; lianjia_ssid=6da073d8-6dbc-4d07-9f0a-9cff0228a91c; lianjia_uuid=2384bd51-81c5-4155-b4a3-c4615c6d6d97

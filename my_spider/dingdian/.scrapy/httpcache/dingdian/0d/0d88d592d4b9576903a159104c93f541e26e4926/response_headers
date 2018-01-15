@@ -1,0 +1,14 @@
+Server: Tengine
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Date: Thu, 21 Dec 2017 08:51:45 GMT
+X-Powered-By: PHP/5.5.9-1ubuntu4.22
+Cache-Control: max-age=600
+Via: cache36.l2nu17-1[171,200-0,M], cache22.l2nu17-1[172,0], kunlun6.cn249[0,200-0,H], kunlun2.cn249[13,0]
+Age: 585
+X-Cache: HIT TCP_HIT dirn:4:190686231 mlen:-1
+X-Swift-Savetime: Thu, 21 Dec 2017 08:51:46 GMT
+X-Swift-Cachetime: 599
+Timing-Allow-Origin: *
+Eagleid: 2a51040215138468904601053e
+Content-Encoding: gzip
