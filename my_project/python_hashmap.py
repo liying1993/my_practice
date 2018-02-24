@@ -58,5 +58,3 @@ if __name__ == '__main__':
     result = myhashmap.insert_hashmap(first_data)
     # print(result)
     myhashmap.get_ele("lala")
-
-
